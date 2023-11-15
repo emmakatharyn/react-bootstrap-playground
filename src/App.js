@@ -1,9 +1,11 @@
 import React from "react";
 import "./App.css";
 
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import Alert from "react-bootstrap/Alert";
+import Counter from "./components/Counter";
+
+// import Button from "react-bootstrap/Button";
+// import Stack from "react-bootstrap/Stack";
+// import Alert from "react-bootstrap/Alert";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -13,8 +15,9 @@ let App = () => {
   return (
     <>
       <BasicExampleNavBar color='primary' />
-      <h1 className='mx-auto text-center my-5'>Hello World</h1>
+      <Counter />
 
+      {/* <h1 className='mx-auto text-center my-5'>Hello World</h1>
       <Stack
         className='my-5 ms-1 ms-auto me-auto'
         direction='horizontal'
@@ -30,7 +33,7 @@ let App = () => {
       <AllTheButts />
       <SizesExample />
       <BlockBtnExample />
-      <BasicExampleAlert />
+      <BasicExampleAlert /> */}
     </>
   );
 };
@@ -63,76 +66,76 @@ function BasicExampleNavBar({ color }) {
   );
 }
 
-function AllTheButts() {
-  return (
-    <>
-      <Button variant='primary'>Primary</Button>{" "}
-      <Button variant='secondary'>Secondary</Button>{" "}
-      <Button variant='success'>Success</Button>{" "}
-      <Button variant='warning'>Warning</Button>{" "}
-      <Button variant='danger'>Danger</Button>{" "}
-      <Button variant='info'>Info</Button>{" "}
-      <Button variant='light'>Light</Button>{" "}
-      <Button variant='dark'>Dark</Button>
-      <Button variant='link'>Link</Button>
-    </>
-  );
-}
-function SizesExample() {
-  return (
-    <>
-      <div className='mb-2 mt-4'>
-        <Button variant='primary' size='lg'>
-          Large button
-        </Button>{" "}
-        <Button variant='secondary' size='lg'>
-          Large button
-        </Button>
-      </div>
-      <div>
-        <Button variant='primary' size='sm'>
-          Small button
-        </Button>{" "}
-        <Button variant='secondary' size='sm'>
-          Small button
-        </Button>
-      </div>
-    </>
-  );
-}
+// function AllTheButts() {
+//   return (
+//     <>
+//       <Button variant='primary'>Primary</Button>{" "}
+//       <Button variant='secondary'>Secondary</Button>{" "}
+//       <Button variant='success'>Success</Button>{" "}
+//       <Button variant='warning'>Warning</Button>{" "}
+//       <Button variant='danger'>Danger</Button>{" "}
+//       <Button variant='info'>Info</Button>{" "}
+//       <Button variant='light'>Light</Button>{" "}
+//       <Button variant='dark'>Dark</Button>
+//       <Button variant='link'>Link</Button>
+//     </>
+//   );
+// }
+// function SizesExample() {
+//   return (
+//     <>
+//       <div className='mb-2 mt-4'>
+//         <Button variant='primary' size='lg'>
+//           Large button
+//         </Button>{" "}
+//         <Button variant='secondary' size='lg'>
+//           Large button
+//         </Button>
+//       </div>
+//       <div>
+//         <Button variant='primary' size='sm'>
+//           Small button
+//         </Button>{" "}
+//         <Button variant='secondary' size='sm'>
+//           Small button
+//         </Button>
+//       </div>
+//     </>
+//   );
+// }
 
-function BlockBtnExample() {
-  return (
-    <div className='d-grid gap-2'>
-      <Button variant='primary' size='lg'>
-        Block level button
-      </Button>
-      <Button variant='secondary' size='lg'>
-        Block level button
-      </Button>
-    </div>
-  );
-}
+// function BlockBtnExample() {
+//   return (
+//     <div className='d-grid gap-2'>
+//       <Button variant='primary' size='lg'>
+//         Block level button
+//       </Button>
+//       <Button variant='secondary' size='lg'>
+//         Block level button
+//       </Button>
+//     </div>
+//   );
+// }
 
-function BasicExampleAlert() {
-  return (
-    <>
-      {[
-        "primary",
-        "secondary",
-        "success",
-        "danger",
-        "warning",
-        "info",
-        "light",
-        "dark",
-      ].map((variant) => (
-        <Alert key={variant} variant={variant}>
-          This is a {variant} alert—check it out!
-        </Alert>
-      ))}
-    </>
-  );
-}
+// function BasicExampleAlert() {
+//   return (
+//     <>
+//       {[
+//         "primary",
+//         "secondary",
+//         "success",
+//         "danger",
+//         "warning",
+//         "info",
+//         "light",
+//         "dark",
+//       ].map((variant) => (
+//         <Alert key={variant} variant={variant}>
+//           This is a {variant} alert—check it out!
+//         </Alert>
+//       ))}
+//     </>
+//   );
+// }
 
 export default App;
